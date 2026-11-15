@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Icon from "./Icon";
 import QuickCalculator from "./QuickCalculator";
@@ -12,12 +13,13 @@ const actions = [
 
 export default function DashboardActions() {
   const [calculatorOpen, setCalculatorOpen] = useState(false);
+  const router = useRouter();
 
   function handleAction(action) {
     if (action.calculator) {
       setCalculatorOpen(true);
     } else if (action.join) {
-      document.getElementById("join-session")?.scrollIntoView({ behavior: "smooth" });
+      router.push("/join");
     }
   }
 
