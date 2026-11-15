@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Icon from "./Icon";
 
 const guests = [
@@ -51,10 +52,10 @@ export default function ActiveSessionCard() {
           <div><p className="text-xs text-outline">Subtotal</p><p className="font-semibold">₹3,420</p></div>
           <div><p className="text-xs text-outline">Pending</p><p className="font-semibold text-primary">2 unpaid</p></div>
         </div>
-        <button className="flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 text-sm font-semibold text-white transition hover:bg-primary-container" type="button">
+        <Link className="flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 text-sm font-semibold text-white transition hover:bg-primary-container" href="/live">
           Manage live order &amp; splitting
           <Icon name="arrow" className="h-4 w-4" />
-        </button>
+        </Link>
       </div>
     </section>
   );

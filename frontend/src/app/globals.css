@@ -46,3 +46,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), sans-serif;
 }
+
+html {
+  background: var(--background);
+  scroll-behavior: smooth;
+}
+
+/* Keep anchored sections clear of the sticky header */
+[id] {
+  scroll-margin-top: 5.5rem;
+}

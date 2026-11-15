@@ -6,12 +6,13 @@ import HomeHeader from "./HomeHeader";
 import JoinSessionCard from "./JoinSessionCard";
 import RecentSessions from "./RecentSessions";
 import Icon from "./Icon";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
     <div className="min-h-dvh bg-background text-foreground">
       <HomeHeader />
-      <main className="mx-auto w-full max-w-lg space-y-5 px-4 pb-8 pt-5" id="dashboard">
+      <main className="mx-auto w-full max-w-lg space-y-5 px-4 pb-28 pt-5" id="dashboard">
         <section className="flex items-center justify-between gap-3">
           <div>
             <h1 className="text-2xl font-semibold tracking-tight">Namaste, Suman</h1>
@@ -35,9 +36,9 @@ export default function HomePage() {
               <p className="text-xs uppercase tracking-wide text-outline">Estimated consumption</p>
               <p className="mt-1 text-2xl font-semibold tracking-tight">₹3,420<span className="text-sm font-normal text-outline">.00</span></p>
             </div>
-            <a className="inline-flex h-9 items-center gap-2 rounded-lg bg-primary px-3 text-sm font-medium text-white transition hover:bg-primary-container" href="#active-session">
+            <Link className="inline-flex h-9 items-center gap-2 rounded-lg bg-primary px-3 text-sm font-medium text-white transition hover:bg-primary-container" href="/live">
               Live tab <Icon name="arrow" className="h-4 w-4" />
-            </a>
+            </Link>
           </div>
         </section>
         <DashboardActions />
@@ -50,7 +51,7 @@ export default function HomePage() {
           <p>TabTally can split GST and service charges proportionally, so everyone knows their fair share.</p>
         </aside>
       </main>
-      <BottomNavigation />
+      <BottomNavigation activePage="home" />
     </div>
   );
 }
