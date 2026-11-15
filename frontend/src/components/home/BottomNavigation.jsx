@@ -5,7 +5,7 @@ const items = [
   { key: "home", label: "Home", icon: "grid", href: "/" },
   { key: "live", label: "Live", icon: "restaurant", href: "/live" },
   { key: "bill", label: "Bill & tax", icon: "receipt", href: "/live#bill-breakdown" },
-  { key: "split", label: "Split", icon: "swap", href: "/live#settlement" },
+  { key: "split", label: "Split", icon: "swap", href: "/split" },
   { key: "history", label: "History", icon: "history", href: "/#recent" },
 ];
 

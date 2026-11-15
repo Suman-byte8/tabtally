@@ -15,6 +15,8 @@
   --outline: #6e7a74;
   --outline-variant: #bec9c2;
   --tertiary: #605b51;
+  --error: #ba1a1a;
+  --error-container: #ffdad6;
 }
 
 @theme inline {
@@ -31,6 +33,8 @@
   --color-outline: var(--outline);
   --color-outline-variant: var(--outline-variant);
   --color-tertiary: var(--tertiary);
+  --color-error: var(--error);
+  --color-error-container: var(--error-container);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --radius-card: 1.25rem;
