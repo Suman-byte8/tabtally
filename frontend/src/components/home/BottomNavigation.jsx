@@ -7,7 +7,6 @@ const items = [
   { key: "bill", label: "Bill & tax", icon: "receipt", href: "/bill" },
   { key: "split", label: "Split", icon: "swap", href: "/split" },
   { key: "history", label: "History", icon: "history", href: "/history" },
-  { key: "profile", label: "Profile", icon: "user", href: "/profile" },
 ];
 
 export default function BottomNavigation({ activePage = "home" }) {

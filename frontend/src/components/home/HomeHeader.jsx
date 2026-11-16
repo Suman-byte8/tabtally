@@ -14,14 +14,23 @@ export default function HomeHeader() {
             <p className="truncate text-xs text-outline">Order together. Split fairly.</p>
           </div>
         </div>
-        <Link
-          aria-label="Notifications"
-          className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-foreground transition hover:bg-surface-container"
-          href="/notifications"
-        >
-          <Icon name="notifications" className="h-5 w-5" />
-          <span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-primary ring-2 ring-surface" />
-        </Link>
+        <div className="flex shrink-0 items-center gap-1">
+          <Link
+            aria-label="Notifications"
+            className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-foreground transition hover:bg-surface-container"
+            href="/notifications"
+          >
+            <Icon name="notifications" className="h-5 w-5" />
+            <span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-primary ring-2 ring-surface" />
+          </Link>
+          <Link
+            aria-label="Profile"
+            className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-secondary-container text-primary ring-1 ring-outline-variant/50 transition hover:ring-primary"
+            href="/profile"
+          >
+            <Icon name="user" className="h-[18px] w-[18px]" />
+          </Link>
+        </div>
       </div>
     </header>
   );
