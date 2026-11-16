@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Icon from "./Icon";
 
 export default function HomeHeader() {
@@ -13,14 +14,14 @@ export default function HomeHeader() {
             <p className="truncate text-xs text-outline">Order together. Split fairly.</p>
           </div>
         </div>
-        <button
+        <Link
           aria-label="Notifications"
           className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-foreground transition hover:bg-surface-container"
-          type="button"
+          href="/profile"
         >
           <Icon name="notifications" className="h-5 w-5" />
           <span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-primary ring-2 ring-surface" />
-        </button>
+        </Link>
       </div>
     </header>
   );
