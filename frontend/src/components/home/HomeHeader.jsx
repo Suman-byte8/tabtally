@@ -17,7 +17,7 @@ export default function HomeHeader() {
         <Link
           aria-label="Notifications"
           className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-foreground transition hover:bg-surface-container"
-          href="/profile"
+          href="/notifications"
         >
           <Icon name="notifications" className="h-5 w-5" />
           <span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-primary ring-2 ring-surface" />
