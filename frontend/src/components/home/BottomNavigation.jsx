@@ -6,7 +6,7 @@ const items = [
   { key: "live", label: "Live", icon: "restaurant", href: "/live" },
   { key: "bill", label: "Bill & tax", icon: "receipt", href: "/bill" },
   { key: "split", label: "Split", icon: "swap", href: "/split" },
-  { key: "history", label: "History", icon: "history", href: "/#recent" },
+  { key: "history", label: "History", icon: "history", href: "/history" },
 ];
 
 export default function BottomNavigation({ activePage = "home" }) {
