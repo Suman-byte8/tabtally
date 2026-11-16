@@ -6,7 +6,7 @@ import Icon from "./Icon";
 import QuickCalculator from "./QuickCalculator";
 
 const actions = [
-  { label: "Create Session", icon: "add", tone: "text-primary" },
+  { label: "Create Session", icon: "add", tone: "text-primary", create: true },
   { label: "Join via QR", icon: "qr", tone: "text-secondary", join: true },
   { label: "Quick Calc", icon: "calculate", tone: "text-tertiary", calculator: true },
 ];
@@ -20,6 +20,8 @@ export default function DashboardActions() {
       setCalculatorOpen(true);
     } else if (action.join) {
       router.push("/join");
+    } else if (action.create) {
+      router.push("/create");
     }
   }
 
